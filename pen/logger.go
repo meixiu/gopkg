@@ -161,7 +161,7 @@ func (l *logger) setPrefix(level int) {
 	if ok {
 		file = filepath.Base(file)
 	}
-	logPrefix := fmt.Sprintf("[%s] %v | %s:%d | ", flag, t.Format("2006/01/02 - 15:04:05"), file, line)
+	logPrefix := fmt.Sprintf("[%s] %v | %s:%d | ", flag, t.Format("2006/01/02-15:04:05"), file, line)
 	l.rawLog.SetPrefix(logPrefix)
 }
 
